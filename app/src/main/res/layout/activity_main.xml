@@ -10,7 +10,7 @@
         android:id="@+id/showToastBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TOAST BUTTON 1"
+        android:text="@string/toast_btn_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +20,7 @@
         android:id="@+id/showToastBtn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TOAST BUTTON 2"
+        android:text="@string/toast_btn_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/showToastBtn" />
@@ -29,7 +29,7 @@
         android:id="@+id/showToastBtn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TOAST BUTTON 3"
+        android:text="@string/toast_btn_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/showToastBtn2" />

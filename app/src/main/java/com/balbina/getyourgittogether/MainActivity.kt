@@ -11,15 +11,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         showToastBtn.setOnClickListener {
-            Toast.makeText(this, "Show toast nr 1", Toast.LENGTH_SHORT).show()
+            showToast(getString(R.string.toast_btn_1))
         }
 
         showToastBtn2.setOnClickListener {
-            Toast.makeText(this, "Show toast nr 2", Toast.LENGTH_SHORT).show()
+            showToast(getString(R.string.toast_btn_2))
         }
 
         showToastBtn3.setOnClickListener {
-            Toast.makeText(this, "Show toast nr 3", Toast.LENGTH_SHORT).show()
+            showToast(getString(R.string.toast_btn_3))
         }
+    }
+
+    private fun showToast(text: String) {
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
     }
 }
