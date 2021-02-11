@@ -11,19 +11,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         showToastBtn.setOnClickListener {
-            showToast(getString(R.string.toast_btn_1))
+            mergeConflictedMethod(getString(R.string.toast_btn_1))
         }
 
         showToastBtn2.setOnClickListener {
-            showToast(getString(R.string.toast_btn_2))
+            mergeConflictedMethod(getString(R.string.toast_btn_2))
         }
 
         showToastBtn3.setOnClickListener {
-            showToast(getString(R.string.toast_btn_3))
+            mergeConflictedMethod(getString(R.string.toast_btn_3))
         }
     }
 
-    private fun showToast(text: String) {
+    private fun mergeConflictedMethod(text: String) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
     }
 }
